@@ -1,0 +1,29 @@
+{
+  "id": "boards",
+  "type": "SharedSlice",
+  "name": "Boards",
+  "description": "Boards",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "skateboard": {
+          "type": "Link",
+          "config": {
+            "label": "skateboard",
+            "select": "document",
+            "customtypes": [
+              "skateboard"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

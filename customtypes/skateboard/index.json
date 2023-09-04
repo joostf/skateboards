@@ -1,0 +1,32 @@
+{
+  "id": "skateboard",
+  "label": "skateboard",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "title",
+          "placeholder": ""
+        }
+      },
+      "visual": {
+        "type": "Image",
+        "config": {
+          "label": "visual",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}
