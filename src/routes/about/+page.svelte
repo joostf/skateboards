@@ -4,6 +4,6 @@
 
 <h1>{ data.title }</h1>
 
-<pre>
+<!-- <pre>
     {JSON.stringify(data, null, 2)}
-</pre>
+</pre> -->

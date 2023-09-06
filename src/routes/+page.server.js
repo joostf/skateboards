@@ -5,7 +5,5 @@ export async function load({fetch, request}){
 
     const document = await client.getByUID('home', 'home', {'fetchLinks': ['skateboard.visual', 'skateboard.title']})
 
-    console.log(document)
-
     return document.data
 }

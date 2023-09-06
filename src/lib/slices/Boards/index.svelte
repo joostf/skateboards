@@ -2,8 +2,6 @@
   /** @type {import("@prismicio/client").Content.BoardsSlice} */
 
   export let slice;
-
-  console.dir(slice)
 </script>
 
 <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
@@ -12,7 +10,7 @@
       <li>
         <a href="{item.skateboard.uid}">
           <span>{item.skateboard.data.title}</span>
-          <img src="{item.skateboard.data.visual.url}" />
+          <img src="{item.skateboard.data.visual.url}" alt="{item.skateboard.data.title}" width="240" height="320"/>
         </a>
       </li>
 
@@ -20,9 +18,9 @@
   </ul>
 
   <footer>
-    <pre>
+    <!-- <pre>
         {JSON.stringify(slice, null, 2)}
-    </pre>
+    </pre> -->
   </footer>
 </section>
 
@@ -30,6 +28,9 @@
   ul  {
     list-style: none;
     padding: 0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1em;
   }
   li a {
     display:flex;
