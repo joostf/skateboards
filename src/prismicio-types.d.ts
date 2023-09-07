@@ -77,7 +77,7 @@ interface HomeDocumentData {
 export type HomeDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<HomeDocumentData>, "home", Lang>;
 
-type PageDocumentDataSlicesSlice = never;
+type PageDocumentDataSlicesSlice = AllSkateBoardsSlice;
 
 /**
  * Content for page documents
@@ -196,6 +196,51 @@ export type SkateboardDocument<Lang extends string = string> =
 export type AllDocumentTypes = HomeDocument | PageDocument | SkateboardDocument;
 
 /**
+ * Primary content in *AllSkateBoards → Items*
+ */
+export interface AllSkateBoardsSliceDefaultItem {
+  /**
+   * skateboard field in *AllSkateBoards → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: all_skate_boards.items[].skateboard
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  skateboard: prismic.ContentRelationshipField<"skateboard">;
+}
+
+/**
+ * Default variation for AllSkateBoards Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AllSkateBoardsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  Simplify<AllSkateBoardsSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *AllSkateBoards*
+ */
+type AllSkateBoardsSliceVariation = AllSkateBoardsSliceDefault;
+
+/**
+ * AllSkateBoards Shared Slice
+ *
+ * - **API ID**: `all_skate_boards`
+ * - **Description**: AllSkateBoards
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AllSkateBoardsSlice = prismic.SharedSlice<
+  "all_skate_boards",
+  AllSkateBoardsSliceVariation
+>;
+
+/**
  * Primary content in *Boards → Items*
  */
 export interface BoardsSliceDefaultItem {
@@ -256,6 +301,10 @@ declare module "@prismicio/client" {
       SkateboardDocument,
       SkateboardDocumentData,
       AllDocumentTypes,
+      AllSkateBoardsSlice,
+      AllSkateBoardsSliceDefaultItem,
+      AllSkateBoardsSliceVariation,
+      AllSkateBoardsSliceDefault,
       BoardsSlice,
       BoardsSliceDefaultItem,
       BoardsSliceVariation,

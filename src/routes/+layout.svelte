@@ -1,6 +1,7 @@
 <nav>
     <ul>
-        <li><a href="/" prefetch>Skateboards</a></li>
+        <li><a href="/" prefetch>Home</a></li>
+        <li><a href="/skateboards" prefetch>Skateboards</a></li>
         <li><a href="/about" prefetch>About</a></li>
     </ul>
 </nav>

@@ -4,6 +4,10 @@ body {
     color:var(--primary)
 }
 
+h1 {
+    color: var(--highlight)
+}
+
 a {
     color:var(--secondary)
 }

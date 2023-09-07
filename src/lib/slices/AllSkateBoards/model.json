@@ -1,8 +1,8 @@
 {
-  "id": "boards",
+  "id": "all_skate_boards",
   "type": "SharedSlice",
-  "name": "Boards",
-  "description": "Boards",
+  "name": "AllSkateBoards",
+  "description": "AllSkateBoards",
   "variations": [
     {
       "id": "default",
@@ -18,7 +18,9 @@
           "config": {
             "label": "skateboard",
             "select": "document",
-            "customtypes": ["skateboard"]
+            "customtypes": [
+              "skateboard"
+            ]
           }
         }
       }

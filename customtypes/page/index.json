@@ -23,7 +23,11 @@
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
-          "choices": {}
+          "choices": {
+            "all_skate_boards": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     },

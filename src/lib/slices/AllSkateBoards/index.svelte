@@ -37,6 +37,9 @@
     flex-flow: column;
     gap:1rem
   }
+  li a span {
+    text-wrap: balance;
+  }
   img {
     max-width:100%;
   }
@@ -47,7 +50,7 @@
     overflow-x:scroll;
     background-color: #303030;
     max-height:20rem;
-    margin-top: 6rem;
+    margin-top: 2rem;
     margin-right: 10rem;
   }
   footer h2  {
