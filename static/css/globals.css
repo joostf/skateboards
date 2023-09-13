@@ -1,3 +1,18 @@
+::view-transition-group(root) {
+    animation: .5s ease-in both transformPage;
+    transform-origin: 50% 50%;
+}
+
+@keyframes transformPage {
+    10% {
+        scale: .75;
+    }
+    100% {
+        scale: 1;
+    }
+  }
+
+
 body {
     background-color: var(--bg);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
