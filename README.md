@@ -1,3 +1,10 @@
+# Resources
+
+This demo is based on these sources:
+[https://joyofcode.xyz/animation-with-svelte](https://joyofcode.xyz/animation-with-svelte)  
+[https://blog.logrocket.com/essential-transitions-and-animations-in-svelte/](https://blog.logrocket.com/essential-transitions-and-animations-in-svelte/)  
+[https://joyofcode.xyz/sveltekit-view-transitions](https://joyofcode.xyz/sveltekit-view-transitions)  
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
