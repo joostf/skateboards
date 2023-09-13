@@ -13,8 +13,8 @@
         easing: backOut,
         duration: 250,
         delay:500
-        };
-    };
+        }
+    }
 
 	onMount(() => {
 		animate = true
